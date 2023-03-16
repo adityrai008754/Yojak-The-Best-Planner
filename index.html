@@ -289,6 +289,22 @@
     </section>
 
     <div class="footer"> created by <span>Aditya rai</span> | all rights reserved! </div>
+    <script> 
+
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
+});
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+}
+
+</script>
 
 </body>
 </html>
